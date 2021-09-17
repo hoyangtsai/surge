@@ -1,6 +1,6 @@
 if ($request.headers['Cookie']) {
-  var cookie = $request.headers['Cookie'];
-  var csrftoken = $request.header['x-csrftoken'];
+  const cookie = $request.headers['Cookie'];
+  const csrftoken = $request.headers['x-csrftoken'];
   if (!cookie) {
     $notification.post("Leetcode cookie save error", "", "Please sign-in again.")
   } else {

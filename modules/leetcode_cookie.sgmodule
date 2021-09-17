@@ -1,8 +1,9 @@
 #!name=Leetcode get cookie
-#!desc=Leetcode api token v20210903
+#!desc=Leetcode api token v20210917
 
 [Script]
 leetcode_cookie.js = type=http-request,pattern=^https:\/\/leetcode\.com\/graphql$,script-path=https://raw.githubusercontent.com/hoyangtsai/surge/main/scripts/leetcode_cookie.js,script-update-interval=-1
+leetcode_checkin.js = type=http-request,pattern=^https:\/\/leetcode\.com\/,script-path=https://raw.githubusercontent.com/hoyangtsai/surge/main/scripts/leetcode_checkin.js,script-update-interval=-1
 
 [MITM]
 hostname = %APPEND% leetcode.com
